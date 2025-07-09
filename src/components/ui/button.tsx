@@ -18,6 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        money: "bg-gradient-money text-accent-foreground hover:scale-105 transition-all duration-300 shadow-glow-money animate-pulse-glow",
+        youtube: "bg-gradient-youtube text-primary-foreground hover:scale-105 transition-all duration-300 shadow-glow-youtube",
+        success: "bg-gradient-success text-primary-foreground hover:scale-105 transition-all duration-300 shadow-glow-success",
+        hero: "bg-gradient-youtube text-primary-foreground hover:scale-110 transition-all duration-500 shadow-glow-youtube text-lg font-bold animate-scale-pulse",
       },
       size: {
         default: "h-10 px-4 py-2",
