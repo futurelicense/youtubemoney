@@ -43,6 +43,11 @@ All colors MUST be HSL.
     --glow-youtube: 0 0 50px hsl(0 84% 60% / 0.3);
     --glow-success: 0 0 30px hsl(142 76% 36% / 0.4);
 
+    /* Enhanced Effects */
+    --glow-intense: 0 0 80px hsl(45 93% 55% / 0.6);
+    --shadow-dramatic: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+    --shadow-neon: 0 0 20px hsl(45 93% 55% / 0.5), 0 0 40px hsl(45 93% 55% / 0.3);
+    
     /* Animation timing */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bouncy: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);

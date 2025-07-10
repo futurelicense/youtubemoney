@@ -71,94 +71,95 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-hero text-foreground">
+    <div className="min-h-screen bg-gradient-hero text-foreground font-inter">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-          <div className="mb-6 space-y-3">
-            <Badge className="animate-pulse bg-destructive text-destructive-foreground text-lg px-6 py-3 border-2 border-destructive/50">
+        <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/40 to-transparent"></div>
+        <div className="relative z-10 container mx-auto px-4 py-24 text-center">
+          <div className="mb-8 space-y-4 animate-fade-in-up">
+            <Badge className="animate-neon-pulse bg-destructive/90 backdrop-blur-sm text-destructive-foreground text-lg px-8 py-4 border-2 border-destructive/50 shadow-neon">
               🚨 URGENT: YouTube Bans AI Content July 15, 2025! 🚨
             </Badge>
-            <Badge className="animate-bounce-in bg-gradient-money text-accent-foreground text-lg px-6 py-2">
+            <Badge className="animate-bounce-in bg-gradient-money text-accent-foreground text-lg px-8 py-3 shadow-glow-intense">
               ⚡ LIMITED TIME: 40% OFF AUTOMATION TOOL ⚡
             </Badge>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-youtube bg-clip-text text-transparent animate-scale-pulse">
+          <h1 className="text-7xl md:text-9xl lg:text-[10rem] font-orbitron font-black mb-8 bg-gradient-youtube bg-clip-text text-transparent animate-scale-pulse drop-shadow-2xl">
             MoneyTuber
           </h1>
           
-          <p className="text-3xl md:text-4xl font-bold mb-4 text-secondary animate-float">
+          <p className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-secondary animate-float tracking-wide drop-shadow-lg">
             20 Days to YouTube Monetization
           </p>
           
-          <div className="max-w-5xl mx-auto mb-8">
-            <div className="bg-destructive/10 border border-destructive/30 rounded-lg p-6 mb-6 backdrop-blur-sm">
-              <h3 className="text-xl font-bold text-destructive mb-3 flex items-center gap-2">
-                <Clock className="h-6 w-6" />
+          <div className="max-w-6xl mx-auto mb-12 animate-slide-up">
+            <div className="bg-destructive/10 border border-destructive/30 rounded-2xl p-8 mb-8 backdrop-blur-sm shadow-dramatic hover:shadow-neon transition-all duration-500">
+              <h3 className="text-2xl md:text-3xl font-bold text-destructive mb-4 flex items-center gap-3 font-orbitron">
+                <Clock className="h-8 w-8 animate-pulse" />
                 BREAKING: YouTube's New Policy Kills AI Channels!
               </h3>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed">
                 Starting July 15, 2025, YouTube will NO LONGER MONETIZE AI-generated videos! 
                 Millions of creators are losing their income streams. Don't be one of them!
               </p>
-              <div className="text-secondary font-bold text-lg">
+              <div className="text-secondary font-bold text-xl md:text-2xl animate-pulse bg-gradient-success bg-clip-text text-transparent">
                 ✅ Our proven system creates AUTHENTIC, monetizable content that passes YouTube's new guidelines
               </div>
             </div>
             
-            <p className="text-xl md:text-2xl text-muted-foreground">
+            <p className="text-2xl md:text-3xl text-muted-foreground leading-relaxed font-light tracking-wide">
               Join the Journey and Do-It-Yourself OR use our MEGA-MONEY automation tool 
               to create AUTHENTIC content while you collect real payouts
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-6 mb-16 animate-zoom-in">
             {features.map((feature, index) => (
-              <div key={index} className="flex items-center gap-2 bg-card/20 backdrop-blur-sm px-4 py-2 rounded-full border border-border/20">
-                <feature.icon className="h-5 w-5 text-secondary" />
-                <span className="text-sm font-medium">{feature.title}</span>
+              <div key={index} className="flex items-center gap-3 bg-card/30 backdrop-blur-md px-6 py-4 rounded-2xl border border-border/30 hover:bg-card/50 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-neon">
+                <feature.icon className="h-6 w-6 text-secondary animate-pulse" />
+                <span className="text-base font-semibold">{feature.title}</span>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="lg" className="text-xl px-8 py-6">
-              <PlayCircle className="mr-2 h-6 w-6" />
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-slide-up">
+            <Button variant="hero" size="lg" className="text-2xl px-12 py-8 rounded-2xl shadow-neon hover:shadow-glow-intense transition-all duration-300 transform hover:scale-105 font-bold">
+              <PlayCircle className="mr-3 h-8 w-8 animate-pulse" />
               GRAB 40% DISCOUNT NOW
             </Button>
-            <Button variant="money" size="lg" className="text-xl px-8 py-6">
-              <Users className="mr-2 h-6 w-6" />
+            <Button variant="money" size="lg" className="text-2xl px-12 py-8 rounded-2xl shadow-dramatic hover:shadow-neon transition-all duration-300 transform hover:scale-105 font-bold">
+              <Users className="mr-3 h-8 w-8 animate-pulse" />
               JOIN TRAINING
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Card className="bg-card/10 backdrop-blur-sm border-border/20">
-              <CardContent className="p-6 text-center">
-                <TrendingUp className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-secondary">1000+</h3>
-                <p className="text-muted-foreground">Students Monetized</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="bg-card/20 backdrop-blur-md border-border/30 hover:bg-card/30 hover:scale-105 transition-all duration-500 shadow-dramatic hover:shadow-neon rounded-3xl">
+              <CardContent className="p-8 text-center">
+                <TrendingUp className="h-16 w-16 text-secondary mx-auto mb-6 animate-float" />
+                <h3 className="text-4xl font-bold text-secondary font-orbitron">1000+</h3>
+                <p className="text-lg text-muted-foreground font-medium">Students Monetized</p>
               </CardContent>
             </Card>
             
-            <Card className="bg-card/10 backdrop-blur-sm border-border/20">
-              <CardContent className="p-6 text-center">
-                <DollarSign className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-secondary">$2.8M+</h3>
-                <p className="text-muted-foreground">Total Revenue Generated</p>
+            <Card className="bg-card/20 backdrop-blur-md border-border/30 hover:bg-card/30 hover:scale-105 transition-all duration-500 shadow-dramatic hover:shadow-neon rounded-3xl">
+              <CardContent className="p-8 text-center">
+                <DollarSign className="h-16 w-16 text-secondary mx-auto mb-6 animate-float" />
+                <h3 className="text-4xl font-bold text-secondary font-orbitron">$2.8M+</h3>
+                <p className="text-lg text-muted-foreground font-medium">Total Revenue Generated</p>
               </CardContent>
             </Card>
             
-            <Card className="bg-card/10 backdrop-blur-sm border-border/20">
-              <CardContent className="p-6 text-center">
-                <Clock className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-secondary">20 Days</h3>
-                <p className="text-muted-foreground">Average Time to Monetize</p>
+            <Card className="bg-card/20 backdrop-blur-md border-border/30 hover:bg-card/30 hover:scale-105 transition-all duration-500 shadow-dramatic hover:shadow-neon rounded-3xl">
+              <CardContent className="p-8 text-center">
+                <Clock className="h-16 w-16 text-secondary mx-auto mb-6 animate-float" />
+                <h3 className="text-4xl font-bold text-secondary font-orbitron">20 Days</h3>
+                <p className="text-lg text-muted-foreground font-medium">Average Time to Monetize</p>
               </CardContent>
             </Card>
           </div>
