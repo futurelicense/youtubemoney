@@ -79,9 +79,14 @@ const Index = () => {
           style={{ backgroundImage: `url(${heroImage})` }}
         />
         <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-          <Badge className="mb-6 animate-bounce-in bg-gradient-money text-accent-foreground text-lg px-6 py-2">
-            ⚡ LIMITED TIME: 40% OFF AUTOMATION TOOL ⚡
-          </Badge>
+          <div className="mb-6 space-y-3">
+            <Badge className="animate-pulse bg-destructive text-destructive-foreground text-lg px-6 py-3 border-2 border-destructive/50">
+              🚨 URGENT: YouTube Bans AI Content July 15, 2025! 🚨
+            </Badge>
+            <Badge className="animate-bounce-in bg-gradient-money text-accent-foreground text-lg px-6 py-2">
+              ⚡ LIMITED TIME: 40% OFF AUTOMATION TOOL ⚡
+            </Badge>
+          </div>
           
           <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-youtube bg-clip-text text-transparent animate-scale-pulse">
             MoneyTuber
@@ -91,10 +96,26 @@ const Index = () => {
             20 Days to YouTube Monetization
           </p>
           
-          <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-4xl mx-auto">
-            Join the Journey and Do-It-Yourself OR use our MEGA-MONEY automation tool 
-            to get your YouTube monetized while you sit back and collect payouts
-          </p>
+          <div className="max-w-5xl mx-auto mb-8">
+            <div className="bg-destructive/10 border border-destructive/30 rounded-lg p-6 mb-6 backdrop-blur-sm">
+              <h3 className="text-xl font-bold text-destructive mb-3 flex items-center gap-2">
+                <Clock className="h-6 w-6" />
+                BREAKING: YouTube's New Policy Kills AI Channels!
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Starting July 15, 2025, YouTube will NO LONGER MONETIZE AI-generated videos! 
+                Millions of creators are losing their income streams. Don't be one of them!
+              </p>
+              <div className="text-secondary font-bold text-lg">
+                ✅ Our proven system creates AUTHENTIC, monetizable content that passes YouTube's new guidelines
+              </div>
+            </div>
+            
+            <p className="text-xl md:text-2xl text-muted-foreground">
+              Join the Journey and Do-It-Yourself OR use our MEGA-MONEY automation tool 
+              to create AUTHENTIC content while you collect real payouts
+            </p>
+          </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {features.map((feature, index) => (
@@ -250,11 +271,14 @@ const Index = () => {
                   Limited slots available. Don't miss your chance to join the MoneyTuber revolution!
                 </CardDescription>
                 
-                <div className="flex justify-center gap-4 mt-6">
-                  <Badge className="bg-gradient-youtube text-primary-foreground animate-pulse">
+                <div className="flex flex-wrap justify-center gap-3 mt-6">
+                  <Badge className="bg-destructive text-destructive-foreground animate-pulse text-sm px-4 py-2">
+                    🚨 6 Days Until YouTube Ban!
+                  </Badge>
+                  <Badge className="bg-gradient-youtube text-primary-foreground animate-pulse text-sm px-4 py-2">
                     🔥 Only 47 Spots Left
                   </Badge>
-                  <Badge className="bg-gradient-success text-primary-foreground animate-pulse">
+                  <Badge className="bg-gradient-success text-primary-foreground animate-pulse text-sm px-4 py-2">
                     ⏰ 40% Discount Ends Soon
                   </Badge>
                 </div>
@@ -313,10 +337,10 @@ const Index = () => {
                           <RadioGroupItem value="training" id="training" />
                           <Label htmlFor="training" className="flex-1 cursor-pointer">
                             <div className="flex items-center justify-between">
-                              <div>
-                                <h3 className="text-lg font-bold text-secondary">Join Training Program</h3>
-                                <p className="text-muted-foreground">Learn step-by-step monetization strategies</p>
-                              </div>
+                <div>
+                  <h3 className="text-lg font-bold text-secondary">Join Training Program</h3>
+                  <p className="text-muted-foreground">Learn AUTHENTIC content strategies that pass YouTube's new guidelines</p>
+                </div>
                               <Badge className="bg-gradient-success text-primary-foreground">
                                 $497
                               </Badge>
@@ -330,13 +354,18 @@ const Index = () => {
                           <RadioGroupItem value="automation" id="automation" />
                           <Label htmlFor="automation" className="flex-1 cursor-pointer">
                             <div className="flex items-center justify-between">
-                              <div>
-                                <h3 className="text-lg font-bold text-secondary">MEGA-MONEY Automation Tool</h3>
-                                <p className="text-muted-foreground">Sit back while AI grows your channel</p>
-                                <Badge className="bg-gradient-money text-accent-foreground mt-2">
-                                  🎉 40% OFF - Limited Time!
-                                </Badge>
-                              </div>
+                <div>
+                  <h3 className="text-lg font-bold text-secondary">MEGA-MONEY Automation Tool</h3>
+                  <p className="text-muted-foreground">Creates AUTHENTIC content that YouTube approves for monetization</p>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    <Badge className="bg-gradient-money text-accent-foreground">
+                      🎉 40% OFF - Limited Time!
+                    </Badge>
+                    <Badge className="bg-destructive text-destructive-foreground">
+                      🚨 Beats July 15 Ban!
+                    </Badge>
+                  </div>
+                </div>
                               <div className="text-right">
                                 <div className="text-sm text-muted-foreground line-through">$2,497</div>
                                 <Badge className="bg-gradient-youtube text-primary-foreground text-lg">
