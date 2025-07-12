@@ -357,7 +357,7 @@ const Index = () => {
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
                 <div>
                   <h3 className="text-sm sm:text-base lg:text-lg font-bold text-secondary">MEGA-MONEY Automation Tool</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground mb-2">Creates AUTHENTIC content that YouTube approves for monetization</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-2">Monitor AUTHENTIC content that YouTube approves for monetization</p>
                   <div className="flex flex-wrap gap-1 sm:gap-2">
                     <Badge className="bg-gradient-money text-accent-foreground text-xs sm:text-sm">
                       🎉 40% OFF - Limited Time!
@@ -368,9 +368,9 @@ const Index = () => {
                   </div>
                 </div>
                               <div className="text-right">
-                                <div className="text-xs sm:text-sm text-muted-foreground line-through">$2,497</div>
+                                <div className="text-xs sm:text-sm text-muted-foreground line-through">$785</div>
                                 <Badge className="bg-gradient-youtube text-primary-foreground text-sm sm:text-base lg:text-lg">
-                                  $1,497
+                                  $45
                                 </Badge>
                               </div>
                             </div>
